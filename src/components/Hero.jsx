@@ -1,17 +1,14 @@
 import React from "react";
-import { Section } from "../style/Hero";
+import { Section, H2, Pw, P } from "../style/Hero";
 const Hero = () => {
   return (
     <Section>
-      <p>Bienvenido a mi portafolio</p>
-      <h2>Cristian Rojas</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente,
-        rerum consequuntur eos odio sunt maxime minima tempore, obcaecati quia
-        ducimus iste sint nulla, odit officiis consequatur consectetur nemo
-        blanditiis?
-      </p>
-
+      <Pw>Bienvenido a mi portafolio</Pw>
+      <H2>Soy Cristian Rojas</H2>
+      <P>
+        Hey, hola! Soy un Maquetador Web, apasionado por el diseño y la
+        programación web, creo proyectos de código abierto.
+      </P>
       <a href="">GitHUB</a>
       <a href="">Linkeding</a>
     </Section>
