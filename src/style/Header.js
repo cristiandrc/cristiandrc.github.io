@@ -8,11 +8,12 @@ export const HeaderStyle = styled.header`
 export const Div = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 950px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 0 10px;
 
   p {
     font-size: 30px;
