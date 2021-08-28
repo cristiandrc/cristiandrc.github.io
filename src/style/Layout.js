@@ -8,7 +8,7 @@ export const Div = styled.div`
 `;
 
 export const Section = styled.section`
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;

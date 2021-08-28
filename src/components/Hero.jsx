@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <Div>
       <div>
-        <Pw>Bienvenido a mi portafolio</Pw>
-        <H2>Hola, Soy Cristian Rojas</H2>
+        <Pw>Desarrollador Frontend</Pw>
+        <H2>Cristian Rojas</H2>
         <P>
           Soy un Maquetador Web, apasionado por el diseño y la programación web,
           creo proyectos de código abierto.

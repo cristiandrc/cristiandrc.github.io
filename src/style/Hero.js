@@ -9,14 +9,15 @@ export const Div = styled.div`
 `;
 export const H2 = styled.h2`
   font-size: 45px;
+  margin-bottom: 60px;
 `;
 
 export const Pw = styled.p`
   font-size: 25px;
-  width: 350px;
+  width: 295px;
   border-bottom: 3px solid gray;
   padding-bottom: 5px;
-  margin: 10px 0 30px;
+  margin: 10px 0 10px;
 `;
 
 export const P = styled.p`
