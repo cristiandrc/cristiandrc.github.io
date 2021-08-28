@@ -12,7 +12,7 @@ export const Section = styled.section`
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  /* padding-top: 80px; */
-  display: grid;
-  place-items: center;
+  padding-top: 80px;
+  /* display: grid;
+  place-items: center; */
 `;
