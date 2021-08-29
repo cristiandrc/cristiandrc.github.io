@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   width: 100%;
-  height: 300px;
+  height: 275px;
   background-color: #283543;
-  padding: 50px 20px 20px;
+  padding: 20px;
   border-radius: 30px;
   box-shadow: 0 5px 25px -8px rgb(97 218 250 / 50%);
 `;
@@ -21,5 +21,6 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   /* width: 50px; */
-  margin: 0 30px;
+  min-width: 82px;
+  margin: 0 20px 5px;
 `;
