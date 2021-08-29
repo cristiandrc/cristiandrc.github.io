@@ -4,10 +4,7 @@ import { Div, A } from "../style/Card";
 const Card = ({ title, img, text, page, github }) => {
   return (
     <Div>
-      <img
-        src="https://abrahamcalsin.com/projects-img/motivation_design_template.svg"
-        alt=""
-      />
+      <img src="" alt="" />
       <p>{text}</p>
       <div>
         <A target="_blank" href={page}>

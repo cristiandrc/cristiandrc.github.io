@@ -8,7 +8,9 @@ export const Div = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  gap: 80px;
   padding: 30px;
+  margin-top: 40px;
   width: 100%;
-  height: 400px;
+  height: 200px;
 `;

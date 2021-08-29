@@ -1,5 +1,5 @@
 import React from "react";
-import { Li, Ul } from "../style/Skills";
+import { Div, Li, Ul } from "../style/Skills";
 import { HtmlIcon } from "./svg/HtmlIcon";
 import { CssIcon } from "./svg/CssIcon";
 import { JavaScriptIcon } from "./svg/JavaScriptIcon";
@@ -7,7 +7,7 @@ import { GitIcon } from "./svg/GitIcon";
 import { ReactIcon } from "./svg/ReactIcon";
 const Skills = () => {
   return (
-    <div>
+    <Div>
       <h3>SKILL</h3>
       <Ul>
         <Li>
@@ -26,7 +26,7 @@ const Skills = () => {
           <ReactIcon />
         </Li>
       </Ul>
-    </div>
+    </Div>
   );
 };
 
