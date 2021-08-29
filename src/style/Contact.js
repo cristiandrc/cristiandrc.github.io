@@ -4,7 +4,7 @@ export const Div = styled.div`
   width: 100%;
   height: 100%;
   background-color: #283543;
-  padding: 50px 20px 20px;
+  padding: 20px;
   border-radius: 30px;
   box-shadow: 0 5px 25px -8px rgb(97 218 250 / 50%);
 `;
@@ -12,31 +12,38 @@ export const Div = styled.div`
 export const DivA = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 174px;
+  margin: 0 auto;
 `;
 
 export const A = styled.a`
   display: inline-block;
-  height: 30px;
-  width: 120px;
-  text-align: center;
-  padding-top: 4px;
-  border-radius: 5px;
   color: white;
-  margin: 50px 20px 20px;
-  text-decoration: none;
-  /* background-color: #838383; */
+  padding-top: 30px;
+  transition: 0.4s ease;
+  &:hover {
+    color: blue;
+  }
 `;
 
 export const Cv = styled.a`
-  display: block;
+  display: grid;
+  place-items: center;
   width: 180px;
-  height: 40px;
+  height: 45px;
   color: white;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   border-radius: 25px;
   border: solid gray 3px;
   text-align: center;
-  padding-top: 8px;
-  margin: 0 auto;
+  margin: 10px auto;
+  transition: 0.4s ease;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: gray;
+    color: #283543;
+  }
 `;

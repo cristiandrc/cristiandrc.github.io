@@ -7,13 +7,14 @@ html {
         font-family: 'Montserrat', sans-serif;
 }
 
+
 *, *::before, *::after {
         box-sizing: inherit;
 }
 
 ul, li, h1, h2, h3, p, button {
         margin: 0;
-        color: white;
+        color: #333;
 }
 
 ul {
@@ -28,12 +29,12 @@ button {
 }
 
 body {
-        background: #fefefe;
+        /* background: #fefefe; */
         min-height: 100vh;
         margin: 0 auto;
         overscroll-behavior: none;
         width: 100%;
-        background: #333;
+        background: #dadada;
 
 }
 
