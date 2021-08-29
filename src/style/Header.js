@@ -21,6 +21,13 @@ export const Div = styled.div`
   }
 `;
 
+export const Logo = styled(LinkRouter)`
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #283543;
+`;
+
 export const Link = styled(LinkRouter)`
   position: relative;
   color: white;
@@ -29,8 +36,9 @@ export const Link = styled(LinkRouter)`
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
+  color: #283543;
   &[aria-current] {
-    color: #f4f4f4;
+    /* color: #333; */
 
     &::after {
       content: " ";
@@ -39,7 +47,7 @@ export const Link = styled(LinkRouter)`
       height: 2px;
       left: 0;
       bottom: -2px;
-      background-color: gray;
+      background-color: #283543;
     }
   }
 `;
@@ -51,5 +59,9 @@ export const Nav = styled.nav`
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width: 400px) {
+    width: 200px;
   }
 `;

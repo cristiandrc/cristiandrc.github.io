@@ -4,20 +4,42 @@ export const Div = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 0 30px;
+
+  @media (max-width: 725px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+    padding: 0;
+  }
 `;
-export const H2 = styled.h2`
+
+export const DivTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+export const Name = styled.h1`
   font-size: 45px;
-  margin-bottom: 60px;
+  text-align: center;
+  @media (max-width: 400px) {
+    font-size: 30px;
+  }
 `;
 
 export const Pw = styled.p`
-  font-size: 25px;
-  width: 295px;
-  border-bottom: 3px solid gray;
+  font-size: 30px;
+  width: 100%;
+  border-bottom: 3px solid #283543;
   padding-bottom: 5px;
   margin: 10px 0 10px;
+  text-align: center;
+  @media (max-width: 400px) {
+    font-size: 25px;
+  }
 `;
 
 export const P = styled.p`
@@ -40,8 +62,8 @@ export const A = styled.a`
 `;
 
 export const Image = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   background: gray;
 `;

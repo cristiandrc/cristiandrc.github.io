@@ -15,4 +15,8 @@ export const Section = styled.section`
   padding-top: 80px;
   /* display: grid;
   place-items: center; */
+
+  @media (max-width: 725px) {
+    padding: 0;
+  }
 `;

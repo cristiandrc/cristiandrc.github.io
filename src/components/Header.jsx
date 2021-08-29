@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "../style/Header";
-import { HeaderStyle, Div, Nav } from "../style/Header";
+import { HeaderStyle, Logo, Div, Nav } from "../style/Header";
 const Header = () => {
   const Home = useRef();
   const Project = useRef();
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <HeaderStyle>
       <Div>
-        <p>CROJAS</p>
+        <Logo to="/">CR</Logo>
         <Nav>
           <ul>
             <li>

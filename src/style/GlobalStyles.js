@@ -14,7 +14,7 @@ html {
 
 ul, li, h1, h2, h3, p, button {
         margin: 0;
-        color: #333;
+        color: #283543;
 }
 
 ul {

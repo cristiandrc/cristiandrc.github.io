@@ -8,6 +8,7 @@ export const FooterStyle = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: solid 1px gray;
+  border-top: solid 1px #283543;
   padding: 0 10px;
+  color: #283543;
 `;
