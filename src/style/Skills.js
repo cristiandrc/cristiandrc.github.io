@@ -12,7 +12,6 @@ export const Ul = styled.ul`
   width: 100%;
   max-width: 400px;
   display: flex;
-  /* justify-content: space-around; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -21,6 +20,6 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
-  width: 50px;
+  /* width: 50px; */
   margin: 0 30px;
 `;
