@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/img/ImgCristian.JPG";
 
 import { Div, Name, Pw, DivTitle, Image } from "../style/Hero";
 const Hero = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
         <Pw>FRONTEND DEVELOPER</Pw>
         <Name>CRISTIAN ROJAS</Name>
       </DivTitle>
-      <Image src="" alt="" />
+      <Image src={img} alt="Cristian" />
     </Div>
   );
 };

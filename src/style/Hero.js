@@ -61,9 +61,10 @@ export const A = styled.a`
   background-color: #838383;
 `;
 
-export const Image = styled.div`
+export const Image = styled.img`
   width: 270px;
   height: 270px;
   border-radius: 50%;
   background: gray;
+  object-fit: cover;
 `;
