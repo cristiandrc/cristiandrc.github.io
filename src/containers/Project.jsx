@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Div } from "../style/Project";
+import { Container, Title, Div } from "../style/Project";
 import { Card } from "../components/Card";
 import Images from "../assets/img/Todo-App.png";
 
@@ -12,34 +12,18 @@ const Data = [
     page: "https://cristiandrc.github.io/Todo-App/",
     github: "https://github.com/cristiandrc/Todo-App",
   },
-  {
-    id: 0,
-    name: "Todo-App",
-    img: Images,
-    text: "Aplicacion de Tareas",
-    page: "https://cristiandrc.github.io/Todo-App/",
-    github: "https://github.com/cristiandrc/Todo-App",
-  },
-  {
-    id: 0,
-    name: "Todo-App",
-    img: Images,
-    text: "Aplicacion de Tareas",
-    page: "https://cristiandrc.github.io/Todo-App/",
-    github: "https://github.com/cristiandrc/Todo-App",
-  },
 ];
 const Project = () => {
   return (
-    <>
+    <Container>
       <Title>Proyectos</Title>
-      <p>Es esta seccion podras ver los proyectos mas destacados</p>
+      <p>Es esta sección podrás ver los proyectos más destacados</p>
       <Div>
         {Data.map((data, i) => (
           <Card key={i} {...data} />
         ))}
       </Div>
-    </>
+    </Container>
   );
 };
 
