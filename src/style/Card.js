@@ -1,36 +1,58 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-  width: 280px;
-  min-height: 350px;
-  margin: 50px 0;
-  padding: 10px 10px;
+  width: 290px;
+  min-height: 400px;
+  margin: 50px 10px;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #3f3f3f;
+  background-color: #283543;
+
   img {
-    width: 250px;
-    height: 200px;
+    width: 266px;
+    height: 197px;
     border-radius: 10px;
     object-fit: cover;
   }
   p {
     text-align: center;
+    color: white;
   }
 `;
 
-export const A = styled.a`
-  display: inline-block;
-  height: 30px;
-  width: 80px;
-  text-align: center;
-  padding-top: 4px;
-  border-radius: 5px;
+export const Name = styled.h2`
   color: white;
-  margin: 0 5px;
+  align-items: left;
+`;
+export const DivA = styled.div`
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; */
+`;
+
+export const A = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
-  background-color: #838383;
+  border-radius: 25px;
+  border: solid #dadada 3px;
+  text-align: center;
+  margin: 10px auto;
+  transition: 0.4s ease;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #dadada;
+    color: #283543;
+  }
 `;

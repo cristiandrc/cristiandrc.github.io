@@ -1,11 +1,30 @@
 import React from "react";
+import { Title, Div } from "../style/Project";
 import { Card } from "../components/Card";
+import Images from "../assets/img/Todo-App.png";
+
 const Data = [
   {
     id: 0,
     name: "Todo-App",
-    img: "https://abrahamcalsin.com/projects-img/motivation_design_template.svg",
-    text: "Adm tareas",
+    img: Images,
+    text: "Aplicacion de Tareas",
+    page: "https://cristiandrc.github.io/Todo-App/",
+    github: "https://github.com/cristiandrc/Todo-App",
+  },
+  {
+    id: 0,
+    name: "Todo-App",
+    img: Images,
+    text: "Aplicacion de Tareas",
+    page: "https://cristiandrc.github.io/Todo-App/",
+    github: "https://github.com/cristiandrc/Todo-App",
+  },
+  {
+    id: 0,
+    name: "Todo-App",
+    img: Images,
+    text: "Aplicacion de Tareas",
     page: "https://cristiandrc.github.io/Todo-App/",
     github: "https://github.com/cristiandrc/Todo-App",
   },
@@ -13,11 +32,13 @@ const Data = [
 const Project = () => {
   return (
     <>
-      <h2>Proyectos</h2>
+      <Title>Proyectos</Title>
       <p>Es esta seccion podras ver los proyectos mas destacados</p>
-      {Data.map((data) => (
-        <Card key={data.id} {...data} />
-      ))}
+      <Div>
+        {Data.map((data, i) => (
+          <Card key={i} {...data} />
+        ))}
+      </Div>
     </>
   );
 };
