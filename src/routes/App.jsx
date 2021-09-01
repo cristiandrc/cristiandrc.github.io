@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Switch, Route } from "react-router-dom";
 import { GlobalStyles } from "../style/GlobalStyles";
 // import Building from "../containers/Building";
 import { Layout } from "../components/Layout";
@@ -14,7 +14,7 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/project" component={Project} />
+          <Route path="/project" component={Project} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
