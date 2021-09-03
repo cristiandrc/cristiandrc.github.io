@@ -6,21 +6,20 @@ import { HeaderStyle, Logo, Div, Nav } from "../style/Header";
 const Header = () => {
   const Home = useRef();
   const Project = useRef();
-  let { pathname } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     if (pathname === "/") {
       Home.current.setAttribute("aria-current", "page");
+      Project.current.removeAttribute("aria-current");
     } else if (pathname === "/project") {
       Project.current.setAttribute("aria-current", "page");
+      Home.current.removeAttribute("aria-current");
+    } else {
+      Home.current.removeAttribute("aria-current");
+      Project.current.removeAttribute("aria-current");
     }
-  }, []);
-
-  const handleClick = (e) => {
-    Home.current.removeAttribute("aria-current");
-    Project.current.removeAttribute("aria-current");
-    e.target.setAttribute("aria-current", "page");
-  };
+  }, [pathname]);
 
   return (
     <HeaderStyle>
@@ -29,12 +28,12 @@ const Header = () => {
         <Nav>
           <ul>
             <li>
-              <Link ref={Home} onClick={handleClick} to="/">
+              <Link ref={Home} to="/">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link ref={Project} onClick={handleClick} to="/project">
+              <Link ref={Project} to="/project">
                 Proyectos
               </Link>
             </li>
