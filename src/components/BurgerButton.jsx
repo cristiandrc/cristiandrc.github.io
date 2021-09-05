@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Burger = styled.button`
   display: none;
+
   @media (max-width: 725px) {
     display: block;
     position: relative;

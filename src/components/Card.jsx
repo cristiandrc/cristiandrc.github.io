@@ -1,15 +1,14 @@
 import React from "react";
-import { Div, Name, DivA, A } from "../style/Card";
+import { Div, Name, A } from "../style/Card";
 import { DiGithubBadge } from "react-icons/di";
 import { MdLanguage } from "react-icons/md";
 
-const Card = ({ name, img, text, page, github }) => {
+const Card = ({ name, img, page, github }) => {
   return (
     <Div>
       <img src={img} alt={name} />
       <Name>{name}</Name>
-      {/* <p>{text}</p> */}
-      <DivA>
+      <div>
         <A target="_blank" href={page}>
           <MdLanguage />
           Proyecto
@@ -17,7 +16,7 @@ const Card = ({ name, img, text, page, github }) => {
         <A target="_blank" href={github}>
           <DiGithubBadge /> Codigo
         </A>
-      </DivA>
+      </div>
     </Div>
   );
 };

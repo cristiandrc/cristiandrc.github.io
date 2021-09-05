@@ -8,7 +8,7 @@ export const FooterStyle = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: solid 1px #283543;
+  border-top: solid 1px ${({ theme }) => theme.color};
   padding: 0 10px;
-  color: #283543;
+  color: ${({ theme }) => theme.color}; ;
 `;

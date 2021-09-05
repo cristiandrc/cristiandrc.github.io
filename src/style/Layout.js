@@ -13,8 +13,6 @@ export const Section = styled.section`
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 80px;
-  /* display: grid;
-  place-items: center; */
 
   @media (max-width: 725px) {
     padding: 0;

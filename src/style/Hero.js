@@ -33,7 +33,7 @@ export const Name = styled.h1`
 export const Pw = styled.p`
   font-size: 30px;
   width: 100%;
-  border-bottom: 3px solid #283543;
+  border-bottom: 3px solid ${({ theme }) => theme.color};
   padding-bottom: 5px;
   margin: 10px 0 10px;
   text-align: center;

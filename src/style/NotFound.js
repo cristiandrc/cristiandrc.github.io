@@ -44,7 +44,7 @@ export const Link = styled(LinkRouter)`
   place-items: center;
   width: 230px;
   height: 55px;
-  background-color: #283543;
+  background-color: ${({ theme }) => theme.bgCards};
   color: white;
   font-size: 20px;
   font-weight: bold;

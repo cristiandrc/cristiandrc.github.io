@@ -26,7 +26,7 @@ export const Logo = styled(LinkRouter)`
   font-size: 40px;
   text-decoration: none;
   font-weight: bold;
-  color: #283543;
+  color: ${({ theme }) => theme.color}; ;
 `;
 
 export const Link = styled(LinkRouter)`
@@ -37,10 +37,8 @@ export const Link = styled(LinkRouter)`
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 1px;
-  color: #283543;
+  color: ${({ theme }) => theme.color};
   &[aria-current] {
-    /* color: #333; */
-
     &::after {
       content: " ";
       position: absolute;
@@ -48,7 +46,7 @@ export const Link = styled(LinkRouter)`
       height: 2px;
       left: 0;
       bottom: -2px;
-      background-color: #283543;
+      background-color: ${({ theme }) => theme.color};
     }
   }
 `;

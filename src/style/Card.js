@@ -10,7 +10,7 @@ export const Div = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #283543;
+  background-color: ${({ theme }) => theme.bgCards};
 
   img {
     width: 266px;
@@ -18,20 +18,11 @@ export const Div = styled.div`
     border-radius: 10px;
     object-fit: cover;
   }
-  p {
-    text-align: center;
-    color: white;
-  }
 `;
 
 export const Name = styled.h2`
-  color: white;
+  color: ${({ theme }) => theme.colorCards};
   align-items: left;
-`;
-export const DivA = styled.div`
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
 `;
 
 export const A = styled.a`
@@ -40,19 +31,19 @@ export const A = styled.a`
   justify-content: space-evenly;
   width: 180px;
   height: 45px;
-  color: white;
+  color: ${({ theme }) => theme.colorCards};
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 25px;
-  border: solid #dadada 3px;
+  border: solid ${({ theme }) => theme.bgColor} 3px;
   text-align: center;
   margin: 10px auto;
   transition: 0.4s ease;
   letter-spacing: 1px;
 
   &:hover {
-    background-color: #dadada;
-    color: #283543;
+    background-color: ${({ theme }) => theme.bgColor};
+    color: ${({ theme }) => theme.color};
   }
 `;
