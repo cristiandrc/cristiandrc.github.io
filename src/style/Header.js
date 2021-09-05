@@ -4,6 +4,7 @@ import { Link as LinkRouter } from "react-router-dom";
 export const HeaderStyle = styled.header`
   width: 100%;
   height: 60px;
+  position: relative;
 `;
 
 export const Div = styled.div`
@@ -61,7 +62,26 @@ export const Nav = styled.nav`
     justify-content: space-between;
   }
 
-  @media (max-width: 400px) {
-    width: 200px;
+  @media (max-width: 725px) {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: ${(props) => (props.open === true ? "0" : "-100vh")};
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(218, 218, 218, 0.829);
+    transition: 0.8s top ease;
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 15px 0;
+      }
+    }
   }
 `;
