@@ -15,7 +15,7 @@ const Span = styled.span`
   position: absolute;
   width: 30px;
   height: 4px;
-  background-color: black;
+  background-color: ${({ theme }) => theme.color};
   border-radius: 4px;
   left: 0;
   top: ${(props) => (props.top ? "3px" : props.center && "13px")};

@@ -3,8 +3,9 @@ import { Link } from "../style/Header";
 import { useLocation } from "react-router-dom";
 import { HeaderStyle, Logo, Div, Nav } from "../style/Header";
 import { BurgerButton } from "./BurgerButton";
+import { ButtonDarkMode } from "./ButtonDarkMode";
 
-const Header = () => {
+const Header = ({ darkMode }) => {
   const [open, setOpen] = useState(false);
   const Home = useRef();
   const Project = useRef();
@@ -42,6 +43,9 @@ const Header = () => {
               <Link ref={Project} to="/project" onClick={handleOpen}>
                 Proyectos
               </Link>
+            </li>
+            <li>
+              <ButtonDarkMode stateDarkMode={darkMode} />
             </li>
           </ul>
         </Nav>

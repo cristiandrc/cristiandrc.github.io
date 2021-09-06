@@ -3,6 +3,15 @@ const ThemeLight = {
   bgCards: "#283543",
   color: "#283543",
   colorCards: "#fff",
+  bgBurger: "#dadadad3",
 };
 
-export { ThemeLight };
+const ThemeDark = {
+  color: "#dadada",
+  bgColor: "#283543",
+  colorCards: "#283543",
+  bgCards: "#dfdede",
+  bgBurger: "#283543d3",
+};
+
+export { ThemeLight, ThemeDark };

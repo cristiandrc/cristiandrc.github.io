@@ -69,8 +69,9 @@ export const Nav = styled.nav`
     bottom: 0;
     display: flex;
     justify-content: center;
+
     align-items: center;
-    background-color: rgba(218, 218, 218, 0.829);
+    background-color: ${({ theme }) => theme.bgBurger};
     transition: 0.8s top ease;
     ul {
       flex-direction: column;

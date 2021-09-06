@@ -27,7 +27,8 @@ export const A = styled.a`
   padding-top: 30px;
   transition: 0.4s ease;
   &:hover {
-    color: ${({ theme }) => theme.bgColor};
+    /* color: ${({ theme }) => theme.color}; */
+    transform: scale(1.1);
   }
 `;
 
@@ -36,7 +37,7 @@ export const Cv = styled.a`
   place-items: center;
   width: 180px;
   height: 45px;
-  color: white;
+  color: ${({ theme }) => theme.colorCards};
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
