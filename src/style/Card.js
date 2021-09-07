@@ -11,7 +11,7 @@ export const Div = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.bgCards};
-
+  box-shadow: 0 5px 25px -8px rgb(97 218 250 / 50%);
   img {
     width: 266px;
     height: 197px;

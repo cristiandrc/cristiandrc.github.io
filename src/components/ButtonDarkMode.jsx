@@ -25,7 +25,7 @@ const Button = styled.button`
     height: 100%;
     transition: transform 1s ease;
     ${({ state }) =>
-      state === !true
+      state === false
         ? css`
             transform: translateX(-50%);
           `
