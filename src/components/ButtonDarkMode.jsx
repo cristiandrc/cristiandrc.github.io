@@ -38,7 +38,11 @@ const Button = styled.button`
 const ButtonDarkMode = ({ stateDarkMode }) => {
   const [darkMode, setDarkMode] = stateDarkMode;
   return (
-    <Button onClick={() => setDarkMode(!darkMode)} state={darkMode}>
+    <Button
+      onClick={() => setDarkMode(!darkMode)}
+      state={darkMode}
+      arial-label="button DarkMode"
+    >
       <BsSun size="20" />
       <BsMoon size="20" />
     </Button>

@@ -8,7 +8,7 @@ const Contact = () => {
       <h3>CONTACTO</h3>
       <DivA>
         <A
-          href="https://www.linkedin.com/in/cristiandrojasc/"
+          href="https://www.linkedin.com/in/cristianrojasc/"
           target="_blank"
           rel="noopener"
         >
