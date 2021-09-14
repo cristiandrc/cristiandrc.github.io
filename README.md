@@ -2,7 +2,7 @@
 
 ## WEB
 
- <h3>Pueder ingresar al portafolio en el siguiente link</h3>
+ <h3>Puedes ingresar al portafolio en el siguiente link</h3>
  <p> <a href='https://cristiandrc.dev'> cristiandrc.dev </a> </p>
 
 ## Contact
