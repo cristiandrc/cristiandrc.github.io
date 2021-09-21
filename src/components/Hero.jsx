@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/ImgCristian.JPG";
+import img from "../assets/img/CV.png";
 
 import { Div, Name, Pw, DivTitle, Image } from "../style/Hero";
 const Hero = () => {
