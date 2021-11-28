@@ -47,3 +47,7 @@ export const A = styled.a`
     color: ${({ theme }) => theme.color};
   }
 `;
+
+export const DivA = styled.div`
+  height: 120px;
+`;
