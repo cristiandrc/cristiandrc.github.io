@@ -5,6 +5,7 @@ import { CssIcon } from "./svg/CssIcon";
 import { JavaScriptIcon } from "./svg/JavaScriptIcon";
 import { GitIcon } from "./svg/GitIcon";
 import { ReactIcon } from "./svg/ReactIcon";
+import { NodeIcon } from "./svg/NodeIcon";
 const Skills = () => {
   return (
     <Div>
@@ -24,6 +25,9 @@ const Skills = () => {
         </Li>
         <Li>
           <ReactIcon />
+        </Li>
+        <Li>
+          <NodeIcon />
         </Li>
       </Ul>
     </Div>
