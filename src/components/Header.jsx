@@ -11,10 +11,19 @@ const Header = ({ darkMode }) => {
   const Project = useRef();
   const { pathname } = useLocation();
 
+  const togglerClass = (status) => {
+    document.body.classList.toggle("body");
+    setOpen(status);
+  };
+
   const handleOpen = (e) => {
     e.stopPropagation();
     setOpen((state) => !state);
+
+    document.body.classList.toggle("body");
+    console.log(document.body);
   };
+
   useEffect(() => {
     if (pathname === "/") {
       Home.current.setAttribute("aria-current", "page");
@@ -49,7 +58,7 @@ const Header = ({ darkMode }) => {
             </li>
           </ul>
         </Nav>
-        <BurgerButton onClick={setOpen} open={open} />
+        <BurgerButton onClick={togglerClass} open={open} />
       </Div>
     </HeaderStyle>
   );

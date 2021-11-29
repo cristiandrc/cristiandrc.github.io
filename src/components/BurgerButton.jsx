@@ -34,7 +34,7 @@ const Span = styled.span`
 
 const BurgerButton = ({ onClick, open }) => {
   return (
-    <Burger onClick={() => onClick((state) => !state)}>
+    <Burger onClick={() => onClick(!open)}>
       <Span open={open} top></Span>
       <Span open={open} center></Span>
       <Span open={open} bottom></Span>
