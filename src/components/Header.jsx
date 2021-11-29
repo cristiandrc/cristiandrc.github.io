@@ -12,16 +12,18 @@ const Header = ({ darkMode }) => {
   const { pathname } = useLocation();
 
   const togglerClass = (status) => {
-    document.body.classList.toggle("body");
+    if (document.documentElement.scrollWidth <= 725) {
+      document.body.classList.toggle("body");
+    }
     setOpen(status);
   };
 
   const handleOpen = (e) => {
     e.stopPropagation();
     setOpen((state) => !state);
-
-    document.body.classList.toggle("body");
-    console.log(document.body);
+    if (document.documentElement.scrollWidth <= 725) {
+      document.body.classList.toggle("body");
+    }
   };
 
   useEffect(() => {
