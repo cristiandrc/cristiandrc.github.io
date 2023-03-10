@@ -20,7 +20,7 @@ const Contact = () => {
       </DivA>
       <Cv
         target="_blank"
-        href="https://drive.google.com/file/d/1FnOlJjOt_ThNkfCEe0vhdFSk6XH6cmFL/view?usp=sharing"
+        href="https://drive.google.com/file/d/1b92n3pmjnrfyNjaM9XLXBZr-iyr8glyT/view?usp=sharing"
         rel="noopener"
       >
         Descargar CV
