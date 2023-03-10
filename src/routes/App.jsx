@@ -10,7 +10,7 @@ import { Project } from "../containers/Project";
 import { NotFound } from "../containers/NotFound";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useLocalStorage("DarkMode", false);
+  const [darkMode, setDarkMode] = useLocalStorage("DarkMode", true);
   return (
     <BrowserRouter>
       <ThemeProvider theme={darkMode ? ThemeDark : ThemeLight}>
