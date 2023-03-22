@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Container,
   Title404,
@@ -8,6 +8,11 @@ import {
 } from "../style/NotFound";
 
 const NotFound = () => {
+  useEffect(() => {
+    if (dataLayer) {
+      dataLayer.push({ event: "error_404" });
+    }
+  }, []);
   return (
     <Container>
       <Title404>¡Ups! </Title404>
